@@ -66,8 +66,8 @@ if operation == "+" {
     for (var index = 0; index < inputArray.count; index++) {
         result = result + convert(inputArray[index])
     }
-    result = result / inputArray.count
-    print(result)
+    let avg = Double(result) / Double(inputArray.count)
+    print(avg)
 } else {
     print ("Please enter a valid operation (i.e. +, -, *, /, %, fact, count, avg)")
 }
